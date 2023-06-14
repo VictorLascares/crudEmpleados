@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h4 style="color: blue;">Lista de empleados de bancomer</h4>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>NOMBRE</th>
+                        <th>APP</th>
+                        <th>APM</th>
+                        <th>NSS</th>
+                        <th>CELULAR</th>
+                        <th>SUELDO</th>
+                        <th>CORREO</th>
+                        <th>EDITAR</th>
+                        <th>ELIMINAR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let e of empleado">
+                        <td>{{e.id}}</td>
+                        <td>{{e.nombre}}</td>
+                        <td>{{e.app}}</td>
+                        <td>{{e.apm}}</td>
+                        <td>{{e.nss}}</td>
+                        <td>{{e.num_cel}}</td>
+                        <td>{{e.sueldo}}</td>
+                        <td>{{e.correo}}</td>
+                        <td><a class="btn btn-outline-warning" (click)="Editar(e)"><span
+                                    class="material-icons">autorenew</span></a></td>
+                        <td><a class="btn btn-outline-danger" (click)="Eliminar(e)"><span class="material-icons">delete_outline</span></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+           
+    </div>
+</div>

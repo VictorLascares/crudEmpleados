@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="card-header">
+        <h3 style="color: blue;">Editar de empleado</h3>
+    </div>
+    <div class="card-body">
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">ID</label>
+                <input type="number" class="form-control" name="id" aria-describedby="emailHelp"
+                    [(ngModel)]="empleado.id">
+                <div id="emailHelp" class="form-text">*Ingrese la clave unica</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">NOMBRE</label>
+                <input type="text" class="form-control" name="nombre" aria-describedby="emailHelp"
+                    [(ngModel)]="empleado.nombre">
+                <div id="emailHelp" class="form-text">*Ingrese el nombre</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">APP</label>
+                <input type="text" class="form-control" name="app" aria-describedby="emailHelp"
+                    [(ngModel)]="empleado.app">
+                <div id="emailHelp" class="form-text">*Ingrese el apellido paterno</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">APM</label>
+                <input type="text" class="form-control" name="apm" aria-describedby="emailHelp"
+                    [(ngModel)]="empleado.apm">
+                <div id="emailHelp" class="form-text">*Ingrese el apellido materno</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">NSS</label>
+                <input type="number" class="form-control" name="nss" aria-describedby="emailHelp"
+                    [(ngModel)]="empleado.nss">
+                <div id="emailHelp" class="form-text">*Ingrese el número de seguro social</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">CELULAR</label>
+                <input type="number" class="form-control" name="num_cel" aria-describedby="emailHelp"
+                    [(ngModel)]="empleado.num_cel">
+                <div id="emailHelp" class="form-text">*Ingrese el numero de celular</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">SUELDO</label>
+                <input type="number" class="form-control" name="sueldo" aria-describedby="emailHelp"
+                    [(ngModel)]="empleado.sueldo">
+                <div id="emailHelp" class="form-text">*Ingrese el sueldo</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">CORREO</label>
+                <input type="email" class="form-control" name="correo" aria-describedby="emailHelp"
+                    [(ngModel)]="empleado.correo">
+                <div id="emailHelp" class="form-text">*Ingrese el corre</div>
+            </div>
+            <button type="submit" class="btn btn-primary" (click)="editar()">Guardar</button>
+        </form>
+          
+    </div>
+
+</div>
